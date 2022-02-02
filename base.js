@@ -1,1 +1,3 @@
-document.write(5 + 6);
+function test(){
+    document.getElementById("demo").innerHTML = "Hello JavaScript";
+}
