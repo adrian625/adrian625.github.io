@@ -4,13 +4,21 @@
         <link rel="stylesheet" href="base.css">
         <script src="base.js"></script>
         <h1>Squirdle</h1> 
+
         
     </head>
+
     <body onload="main()">
 
-        <div id="board-container">flex
+        <div id="board-container">
             <div id="board" style="width: 350px; height: 420 px;"></div>
+            <game-row letters length="5"><div class=""></div></game-row>
+            <game-row letters length="5">...</game-row>
+            <game-row letters length="5"></game-row>
         </div>
+        
+
+
         <div class="guessArea">
             <div class="output-wordle-guess-one guess" id="0">
                 <div class="letter-one row" id="00"></div>
@@ -61,7 +69,7 @@
 
         </div>
         <div class="alphabet-grid">
-            <p>Row one
+            <p>
                 <button id="Q" value="Q" onclick="setboxVal(this.value)">Q</button>
                 <button id="W" value="W" onclick="setboxVal(this.value)">W</button>
                 <button id="E" value="E" onclick="setboxVal(this.value)">E</button>
@@ -74,7 +82,7 @@
                 <button id="P" value="P" onclick="setboxVal(this.value)">P</button>
             </p>
 
-            <p>Row two
+            <p>
                 <button id="A" value="A" onclick="setboxVal(this.value)">A</button>
                 <button id="S" value="S" onclick="setboxVal(this.value)">S</button>
                 <button id="D" value="D" onclick="setboxVal(this.value)">D</button>
@@ -86,7 +94,7 @@
                 <button id="L" value="L" onclick="setboxVal(this.value)">L</button>
             </p>
 
-            <p>Row three
+            <p>
                 <button onclick="enterKeyPress()">enter</button>
                 <button id="Z" value="Z" onclick="setboxVal(this.value)">Z</button>
                 <button id="X" value="X" onclick="setboxVal(this.value)">X</button>

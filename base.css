@@ -5,39 +5,49 @@
 
 .alphabet-grid button {
     background-color: aqua;
-    justify-content: center;
-    align-items: center;
     min-height: auto;
+    position: relative;
 }
 
 .alphabet-grid{
     justify-content: center;
     align-items: center;
     min-height: fit-content;
+    
 }
-head{
+.head{
     text-align: center;
     text-decoration-color: #00FF6C;
+    position: relative;
+    margin: auto;
 }
 
 
 
-
+.board{
+    width: 350px;
+    height: 420px;
+    grid-template-columns: 5;
+    grid-template-rows: 6;
+}
 
 
 
 
 
 body {
+    
     padding: 0;
     margin: 0%;
     background: linear-gradient(to right, #00AAFF, #00FF6C);
+    
 }
 .guessArea{
-    width: 145px;
-    height: 190px;
-    background-color:#000;
-    border: 0.5em,  #666666;
+    position: relative;
+    width: 350px;
+    height: 420px;
+    background-color:#00AAFF;
+    border: 0.5em,  #202121;
     border-spacing:5px;
     margin: auto;
 }
@@ -45,21 +55,19 @@ body {
     width: 20px;
     height: 20px;
     display:table-row;
+    align-content: center;
+    align-items: center;
 }
 .row{
     width: 20px;
     height: 20px;
-    background-color: darkgray;
+    background-color: #000;
     margin-top: 5px;
     margin-left: 5px;
-    float:left;
+    flex: left;
 }
-.box {
-    width: 20px;
-    height: 20px;
-    border-left: 2px;
-    margin-right: 5px;
-}
+   
+
 
 /*eighty-eight, twenty-four, sixty-nine*/
 /*0,0,0*/
