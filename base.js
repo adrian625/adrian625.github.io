@@ -1,6 +1,9 @@
 //Global Variable where word will be stored
 let wordToGuess = "";
 let wordGuess = "";
+const wrongLetter = [];
+const wrongPos = [];
+const correctLetter = [];
 async function main(){
     let wordToGuess = await readFromTxTFile();
     document.getElementById("demo").innerHTML = wordToGuess;
@@ -12,7 +15,7 @@ async function readFromTxTFile(){
     //convert to string
     var data = await response.text();
     const splitData = data.toLowerCase().split("\n");
-    wordToGuess = splitData[randVal(splitData.length)];
+    wordToGuess = splitData[randVal(splitData.length)].toUpperCase();
     return wordToGuess;
 }
 function wordCheck(){
@@ -38,4 +41,24 @@ function setboxVal(letter){
 function delCharWord(){
     wordGuess = wordGuess.slice(0,-1);
     document.getElementById("demo").innerHTML = wordGuess;
+}
+function enterKeyPress(){
+    if(wordGuess.length < 5 ){
+        return;
+    }
+    checkWord();
+}
+function checkWord(){
+    for (let index = 0; index < wordGuess.length; index++) {
+        if(wordGuess.charAt(index) == wordToGuess.charAt(index)){
+            correctLetter.push(wordGuess.charAt(index));
+        }
+        else if (wordToGuess.includes(wordGuess.charAt(index))){
+            wrongPos.push(wordGuess.charAt(index))
+        }
+        else{
+            wrongLetter.push(wordGuess.charAt(index))
+        }
+    }
+    document.getElementById("demo").innerHTML = correctLetter.join('');
 }
