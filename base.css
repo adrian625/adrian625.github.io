@@ -1,8 +1,11 @@
-*, *::before, *::after{
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-weight: normal;
-}
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: var(--header-height);
+    color: #00AAFF;
 
+}
 .alphabet-grid button {
     background-color: aqua;
     min-height: auto;
@@ -24,11 +27,12 @@
 
 
 
-.board{
-    width: 350px;
-    height: 420px;
-    grid-template-columns: 5;
-    grid-template-rows: 6;
+.board-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1;
+    overflow: hidden;
 }
 
 
