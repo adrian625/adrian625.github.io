@@ -1,4 +1,6 @@
 //Global Variable where word will be stored
+let wordToGuess;
+let wordGuess;
 async function main(){
     let wordToGuess = await readFromTxTFile();
     document.getElementById("demo").innerHTML = wordToGuess;
@@ -21,10 +23,12 @@ function randVal(lengthVal){
     return Math.floor(Math.random() * lengthVal)
 }
 function pullWord(){
-    let wordGuess = "";
     const letterList = document.getElementsByClassName("box").value;
     letterList.forEach(element => {
-        this.wordGuess += element;
+        wordGuess += element;
     });
     document.getElementById("demo").innerHTML = wordGuess;
+}
+function setboxVal(letter){
+    wordGuess += letter;
 }
