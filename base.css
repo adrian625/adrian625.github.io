@@ -15,7 +15,10 @@
     align-items: center;
     min-height: fit-content;
 }
-
+head{
+    text-align: center;
+    text-decoration-color: #00FF6C;
+}
 
 
 
