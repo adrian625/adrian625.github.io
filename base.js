@@ -34,8 +34,8 @@ function delCharWord(){
     updateDispWord();
 }
 function enterKeyPress(){
-    
     if(wordGuess.length < 5 ){
+
         return;
     }
     checkWord();
@@ -45,6 +45,7 @@ function enterKeyPress(){
     attempt += 1;
     attemptCheck();
     updateLetterStatus();
+    clearListVal()
 }
 function checkWord(){
     for (let index = 0; index < wordGuess.length; index++) {
@@ -59,6 +60,17 @@ function checkWord(){
         }
     }
     document.getElementById("demo").innerHTML = correctLetter.join('');
+}
+function clearListVal(){
+    while(correctLetter.length > 0) {
+        correctLetter.pop();
+    }
+    while(wrongPos.length > 0) {
+        wrongPos.pop();
+    }
+    while(wrongLetter.length > 0) {
+        wrongLetter.pop();
+    }
 }
 function attemptCheck(){
 
