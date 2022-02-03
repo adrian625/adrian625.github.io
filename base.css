@@ -18,7 +18,28 @@
 
 
 body {
-    background-color: rgb(0, 0, 0);
+    background-color: rgb(44, 43, 43);
+}
+.guessArea{
+    width: 145px;
+    height: 190px;
+    background-color:#eee;
+    border:1px solid  #666666;
+    border-spacing:5px;
+    margin: auto;
+}
+.guess{
+    width: 20px;
+    height: 20px;
+    display:table-row;
+}
+.row{
+    width: 20px;
+    height: 20px;
+    background-color: darkgray;
+    margin-top: 5px;
+    margin-left: 5px;
+    float:left;
 }
 .box {
     width: 20px;
