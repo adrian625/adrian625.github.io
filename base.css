@@ -20,28 +20,25 @@ body {
     background-color: rgb(44, 43, 43);
 }
 .guessArea{
-    display:  table;
-    width:auto;
-    height: 160px;
+    width: 145px;
+    height: 190px;
     background-color:#eee;
     border:1px solid  #666666;
     border-spacing:5px;
+    margin: auto;
 }
 .guess{
     width: 20px;
     height: 20px;
-    float: left;
-    background-color: darkgray;
-    margin-right: 5px;
-    display: table-row;
+    display:table-row;
 }
 .row{
     width: 20px;
     height: 20px;
     background-color: darkgray;
     margin-top: 5px;
-    display: table-column;
-    float: left;
+    margin-left: 5px;
+    float:left;
 }
 .box {
     width: 20px;
