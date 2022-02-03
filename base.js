@@ -4,6 +4,7 @@ let wordGuess = "";
 const wrongLetter = [];
 const wrongPos = [];
 const correctLetter = [];
+let attempt = 0;
 async function main(){
     let wordToGuess = await readFromTxTFile();
     document.getElementById("demo").innerHTML = wordToGuess;
@@ -18,35 +19,31 @@ async function readFromTxTFile(){
     wordToGuess = splitData[randVal(splitData.length)].toUpperCase();
     return wordToGuess;
 }
-function wordCheck(){
-    let intendedWord = pullWord();
-}
 //Function returns random number based on length of list
 function randVal(lengthVal){
     return Math.floor(Math.random() * lengthVal)
-}
-function pullWord(){
-    const letterList = document.getElementsByClassName("box").value;
-    letterList.forEach(element => {
-        wordGuess += element;
-    });
-    document.getElementById("demo").innerHTML = wordGuess;
 }
 function setboxVal(letter){
     if(wordGuess.length < 5 ){
         wordGuess = wordGuess + letter;
     }
-    document.getElementById("demo").innerHTML = wordGuess;
+    updateDispWord();
 }
 function delCharWord(){
     wordGuess = wordGuess.slice(0,-1);
-    document.getElementById("demo").innerHTML = wordGuess;
+    updateDispWord();
 }
 function enterKeyPress(){
+    
     if(wordGuess.length < 5 ){
         return;
     }
     checkWord();
+    if (correctLetter.length == 5) {
+        
+    }
+    attempt += 1;
+    attemptCheck();
 }
 function checkWord(){
     for (let index = 0; index < wordGuess.length; index++) {
@@ -61,4 +58,10 @@ function checkWord(){
         }
     }
     document.getElementById("demo").innerHTML = correctLetter.join('');
+}
+function attemptCheck(){
+
+}
+function updateDispWord(){
+    document.getElementById("demo").innerHTML = wordGuess;
 }
