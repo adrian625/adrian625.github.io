@@ -5,7 +5,9 @@
 
 .alphabet-grid button {
     background-color: aqua;
-    
+    justify-content: center;
+    align-items: center;
+    min-height: auto;
 }
 
 
@@ -18,7 +20,9 @@
 
 
 body {
-    background-color: rgb(44, 43, 43);
+    padding: 0;
+    margin: 0%;
+    background: linear-gradient(to right, #00AAFF, #00FF6C);
 }
 .guessArea{
     width: 145px;
