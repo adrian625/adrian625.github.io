@@ -10,6 +10,7 @@ async function readFromTxTFile(){
     const response = await fetch('https://adrian625.github.io/fileTest.txt');
     //convert to string
     var data = await response.text();
+    test();
     const splitData = data.toLowerCase().split("\n");
     wordToGuess = splitData[randVal(splitData.length)];
     document.getElementById("demo").innerHTML = wordToGuess;
