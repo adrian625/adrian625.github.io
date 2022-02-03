@@ -7,7 +7,7 @@ function test(){
 //Function that reads what word to guess
 async function readFromTxTFile(){
     //reads text file
-    const response = await fetch('./fileTest.txt');
+    const response = await fetch('https://adrian625.github.io/fileTest.txt');
     //convert to string
     var data = await response.text();
     const splitData = data.toLowerCase().split("\n");
