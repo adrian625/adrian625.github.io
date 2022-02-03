@@ -1,8 +1,4 @@
 //Global Variable where word will be stored
-//test function
-function test(){
-    document.getElementById("demo").innerHTML = "Hello JavaScript";
-}
 async function main(){
     let wordToGuess = await readFromTxTFile();
     document.getElementById("demo").innerHTML = wordToGuess;
