@@ -7,10 +7,10 @@ function test(){
 //Function that reads what word to guess
 async function readFromTxTFile(){
     //reads text file
-    const response = await fetch('fileTest.txt');
+    const response = await fetch('./fileTest.txt');
     //convert to string
     var data = await response.text();
-    const splitData = data.toLowerCase.split("\n");
+    const splitData = data.toLowerCase().split("\n");
     wordToGuess = splitData[randVal(splitData.length)];
     document.getElementById("demo").innerHTML = wordToGuess;
 }
