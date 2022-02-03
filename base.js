@@ -1,8 +1,11 @@
 //Global Variable where word will be stored
-let wordToGuess = "";
 //test function
 function test(){
     document.getElementById("demo").innerHTML = "Hello JavaScript";
+}
+async function main(){
+    let wordToGuess = await readFromTxTFile();
+    document.getElementById("demo").innerHTML = wordToGuess;
 }
 //Function that reads what word to guess
 async function readFromTxTFile(){
@@ -12,7 +15,7 @@ async function readFromTxTFile(){
     var data = await response.text();
     const splitData = data.toLowerCase().split("\n");
     wordToGuess = splitData[randVal(splitData.length)];
-    document.getElementById("demo").innerHTML = wordToGuess;
+    return wordToGuess;
 }
 //Function returns random number based on length of list
 function randVal(lengthVal){
