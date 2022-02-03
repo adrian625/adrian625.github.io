@@ -85,10 +85,20 @@ function updateLetterStatus(){
 }
 function updateCorrectLetters(){
     //To Do: Change css when letter is correct
+    correctLetter.forEach(element => {
+        document.getElementById(element).style.backgroundColor = "green"
+    });
+    document.getElementById("demo").style.color = "blue";
 }
 function updateWrongPosLetters(){
     //To Do: Change css when letter is correct but in wrong position
+    wrongPos.forEach(element => {
+        document.getElementById(element).style.backgroundColor = "blue"
+    });
 }
 function updateWrongLetters(){
     //To Do: Change css when letter is wrong
+    wrongLetter.forEach(element => {
+        document.getElementById(element).style.backgroundColor = "gray"
+    });
 }
