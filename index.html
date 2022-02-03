@@ -5,56 +5,55 @@
         <script src="base.js"></script>
     </head>
     <body onload="main()">
-        <div class="output-wordle-guess-one">
-            <div class="letter-one"></div>
-            <div class="letter-two"></div>
-            <div class="letter-three"></div>
-            <div class="letter-four"></div>
-            <div class="letter-five"></div>
-        </div>
-        <h1 id="demo">You can work on CSS now</h1>
-        <button onclick="wordCheck()">Testing</button>
+        <div class="guessArea">
+            <div class="output-wordle-guess-one guess" id="0">
+                <div class="letter-one row" id="00"></div>
+                <div class="letter-two row" id="01"></div>
+                <div class="letter-three row" id="02"></div>
+                <div class="letter-four row" id="03"></div>
+                <div class="letter-five row" id="04"></div>
+            </div>
+            <div class="output-wordle-guess-two guess" id="1">
+                <div class="box-two-letter-one row" id="10"></div>
+                <div class="box-two-letter-two row" id="11"></div>
+                <div class="box-two-letter-three row" id="12"></div>
+                <div class="box-two-letter-four row" id="13"></div>
+                <div class="box-two-letter-five row" id="14"></div>
+            </div>
+    
+            <div class="output-wordle-guess-three guess" id="2">
+                <div class="box-three-letter-one row" id="20"></div>
+                <div class="box-three-letter-two row" id="21"></div>
+                <div class="box-three-letter-three row" id="22"></div>
+                <div class="box-three-letter-four row" id="23"></div>
+                <div class="box-three-letter-five row" id="24"></div>
+            </div>
+    
+            <div class="output-wordle-guess-four guess" id="3">
+                <div class="box-four-letter-one row" id="30"></div>
+                <div class="box-four-letter-two row" id="31"></div>
+                <div class="box-four-letter-three row" id="32"></div>
+                <div class="box-four-letter-four row" id="33"></div>
+                <div class="box-four-letter-five row" id="34"></div>
+            </div>
+    
+            <div class="output-wordle-guess-five guess"id="4">
+                <div class="box-five-letter-one row" id="40"></div>
+                <div class="box-five-letter-two row" id="41"></div>
+                <div class="box-five-letter-three row" id="42"></div>
+                <div class="box-five-letter-four row" id="43"></div>
+                <div class="box-five-letter-five row" id="44"></div>
+            </div>
+    
+            <div class="output-wordle-final-guess guess" id="5">
+                <div class="box-final-letter-one row" id="50"></div>
+                <div class="box-final-letter-two row" id="51"></div>
+                <div class="box-final-letter-three row" id="52"></div>
+                <div class="box-final-letter-four row" id="53"></div>
+                <div class="box-final-letter-five row" id="54"></div>
+            </div>
 
-        <div class="output-wordle-guess-two">
-            <div class="box-two-letter-one"></div>
-            <div class="box-two-letter-two"></div>
-            <div class="box-two-letter-three"></div>
-            <div class="box-two-letter-four"></div>
-            <div class="box-two-letter-five"></div>
         </div>
-
-        <div class="output-wordle-guess-three">
-            <div class="box-three-letter-one"></div>
-            <div class="box-three-letter-two"></div>
-            <div class="box-three-letter-three"></div>
-            <div class="box-three-letter-four"></div>
-            <div class="box-three-letter-five"></div>
-        </div>
-
-        <div class="output-wordle-guess-four">
-            <div class="box-four-letter-one"></div>
-            <div class="box-four-letter-two"></div>
-            <div class="box-four-letter-three"></div>
-            <div class="box-four-letter-four"></div>
-            <div class="box-four-letter-five"></div>
-        </div>
-
-        <div class="output-wordle-guess-five">
-            <div class="box-five-letter-one"></div>
-            <div class="box-five-letter-two"></div>
-            <div class="box-five-letter-three"></div>
-            <div class="box-five-letter-four"></div>
-            <div class="box-five-letter-five"></div>
-        </div>
-
-        <div class="output-wordle-final-guess">
-            <div class="box-final-letter-one"></div>
-            <div class="box-final-letter-two"></div>
-            <div class="box-final-letter-three"></div>
-            <div class="box-final-letter-four"></div>
-            <div class="box-final-letter-five"></div>
-        </div>
-
         <div class="alphabet-grid">
             <p>Row one
                 <button id="Q" value="Q" onclick="setboxVal(this.value)">Q</button>
@@ -100,11 +99,8 @@
         <h1>You can work on CSS now</h1>
         <button>Testing</button>
 
-        <input type="text" class="box" id="0" maxlength="1">
-        <input type="text" class="box" id="1" maxlength="1">
-        <input type="text" class="box" id="2" maxlength="1">
-        <input type="text" class="box" id="3" maxlength="1">
-        <input type="text" class="box" id="4" maxlength="1">
+        <p id="demo"></p>
+        <p id="testOut"></p>
         
     </body>
 </html>

@@ -26,21 +26,27 @@ function randVal(lengthVal){
 function setboxVal(letter){
     if(wordGuess.length < 5 ){
         wordGuess = wordGuess + letter;
+        updateBoxWord(letter);
+        updateDispWord();
     }
-    updateDispWord();
+
 }
 function delCharWord(){
     wordGuess = wordGuess.slice(0,-1);
     updateDispWord();
 }
+function updateBoxWord(letter){
+    let idGet = attempt.toString() + (wordGuess.length - 1).toString();
+    document.getElementById("testOut").innerHTML = idGet;
+    document.getElementById(idGet).innerHTML = letter;
+}
 function enterKeyPress(){
     if(wordGuess.length < 5 ){
-
         return;
     }
     checkWord();
     if (correctLetter.length == 5) {
-        
+        //Add Win Function
     }
     attempt += 1;
     attemptCheck();
@@ -82,13 +88,13 @@ function updateLetterStatus(){
     updateCorrectLetters();
     updateWrongPosLetters();
     updateWrongLetters();
+    wordGuess = "";
 }
 function updateCorrectLetters(){
     //To Do: Change css when letter is correct
     correctLetter.forEach(element => {
         document.getElementById(element).style.backgroundColor = "green"
     });
-    document.getElementById("demo").style.color = "blue";
 }
 function updateWrongPosLetters(){
     //To Do: Change css when letter is correct but in wrong position
