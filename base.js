@@ -44,6 +44,7 @@ function enterKeyPress(){
     }
     attempt += 1;
     attemptCheck();
+    updateLetterStatus();
 }
 function checkWord(){
     for (let index = 0; index < wordGuess.length; index++) {
@@ -64,4 +65,18 @@ function attemptCheck(){
 }
 function updateDispWord(){
     document.getElementById("demo").innerHTML = wordGuess;
+}
+function updateLetterStatus(){
+    updateCorrectLetters();
+    updateWrongPosLetters();
+    updateWrongLetters();
+}
+function updateCorrectLetters(){
+    //To Do: Change css when letter is correct
+}
+function updateWrongPosLetters(){
+    //To Do: Change css when letter is correct but in wrong position
+}
+function updateWrongLetters(){
+    //To Do: Change css when letter is wrong
 }
