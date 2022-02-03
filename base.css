@@ -36,8 +36,8 @@ body {
 .guessArea{
     width: 145px;
     height: 190px;
-    background-color:#eee;
-    border:1px solid  #666666;
+    background-color:#000;
+    border: 0.5em,  #666666;
     border-spacing:5px;
     margin: auto;
 }
