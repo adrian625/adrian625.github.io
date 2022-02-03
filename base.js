@@ -13,7 +13,18 @@ async function readFromTxTFile(){
     wordToGuess = splitData[randVal(splitData.length)];
     return wordToGuess;
 }
+function wordCheck(){
+    let intendedWord = pullWord();
+}
 //Function returns random number based on length of list
 function randVal(lengthVal){
     return Math.floor(Math.random() * lengthVal)
+}
+function pullWord(){
+    let wordGuess = "";
+    const letterList = document.getElementsByClassName("box").value;
+    letterList.forEach(element => {
+        this.wordGuess += element;
+    });
+    document.getElementById("demo").innerHTML = wordGuess;
 }
