@@ -1,6 +1,6 @@
-.title{
+.header{
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     height: var(--header-height);
     text-align: center;
@@ -8,19 +8,24 @@
     font-style: normal;
     font-size: large;
     font-weight: 400;
-    
 
 }
 .alphabet-grid button {
     background-color: aqua;
     min-height: auto;
     position: relative;
+    text-align: center;
+    justify-content: center;
+    justify-items: center;
+    justify-self: center;
 }
 
 .alphabet-grid{
     justify-content: center;
     align-items: center;
     min-height: 200px;
+    text-align: center;
+    position: relative;
     
 }
 .head{
