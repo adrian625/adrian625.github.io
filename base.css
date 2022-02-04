@@ -1,9 +1,14 @@
-.header{
+.title{
     display: flex;
     justify-content: space-between;
     align-items: center;
     height: var(--header-height);
-    color: #00AAFF;
+    text-align: center;
+    position: relative;
+    font-style: normal;
+    font-size: large;
+    font-weight: 400;
+    
 
 }
 .alphabet-grid button {
@@ -76,7 +81,7 @@ body {
     align-content: center;
     align-items: center;
 }
-.row{
+.gamerow{
     display: grid;
     grid-template-columns: repeat(5, 1 fr);
     grid-gap: 5px
