@@ -15,7 +15,7 @@
 .alphabet-grid{
     justify-content: center;
     align-items: center;
-    min-height: fit-content;
+    min-height: 200px;
     
 }
 .head{
@@ -76,12 +76,9 @@ body {
     align-items: center;
 }
 .row{
-    width: 20px;
-    height: 20px;
-    background-color: #000;
-    margin-top: 5px;
-    margin-left: 5px;
-    flex: left;
+    display: grid;
+    grid-template-columns: repeat(5, 1 fr);
+    grid-gap: 5px
 }
    
 
