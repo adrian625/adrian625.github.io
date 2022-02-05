@@ -1,99 +1,110 @@
-.header{
+* {
+    color: #a2d7d5;
+    font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+      "Lucida Sans", Arial, sans-serif;
+  }
+  
+  body {
+    background-color: #55a3ab;
+  }
+  
+  .title-container {
+    text-align: center;
+    width: 510px;
+  }
+  
+  .game-container {
+    height: 90vh;
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    justify-content: space-between;
     align-items: center;
-    height: var(--header-height);
-    text-align: center;
-    position: relative;
-    font-style: normal;
-    font-size: large;
-    font-weight: 400;
-
-}
-.alphabet-grid button {
-    background-color: aqua;
-    min-height: auto;
-    position: relative;
-    text-align: center;
-    justify-content: center;
-    justify-items: center;
-    justify-self: center;
-}
-
-.alphabet-grid{
-    justify-content: center;
-    align-items: center;
-    min-height: 200px;
-    text-align: center;
-    position: relative;
-    
-}
-.head{
-    text-align: center;
-    text-decoration-color: #00FF6C;
-    position: relative;
-    margin: auto;
-}
-
-
-
-.board-container{
+  }
+  
+  .tile-container {
+    width: 330px;
+    margin-bottom: 30px;
+  }
+  
+  .key-container {
+    width: 510px;
     display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-grow: 1;
-    overflow: hidden;
-}
-
-.tile {
-    width: 20px;
-    height: 20px;
-    display:inline-block;
-    margin-top: 10px;
-    margin-left: 10px;
-    font-size: 2rem;
-    line-height: 2rem;
-    font-weight: bold;
-    vertical-align: middle;
+    flex-wrap: wrap;
+  }
+  
+  .key-container button {
+    width: 43px;
+    height: 58px;
+    border-radius: 4px;
+    border: none;
+    background-color: aliceblue;
+    color: #55a3ab;
+    margin: 4px;
+  }
+  
+  .key-container button:nth-child(11) {
+    margin-left: 30px;
+  }
+  
+  .key-container button:nth-child(20),
+  .key-container button:nth-child(28) {
+    width: 68px;
+  }
+  
+  .tile-container .tile {
+    width: 62px;
+    height: 62px;
+    border: 2px solid#3a3a3c;
     box-sizing: border-box;
-    background-color: black;
-    text-transform: uppercase;
-    user-select: none;
-}
-
-
-
-body {
-    
-    padding: 0;
-    margin: 0%;
-    background: linear-gradient(to right, #00AAFF, #00FF6C);
-    
-}
-.guessArea{
-    position: relative;
-    width: 350px;
-    height: 420px;
-    background-color:#00AAFF;
-    border: 0.5em,  #202121;
-    border-spacing:5px;
-    margin: auto;
-}
-.guess{
-    width: 20px;
-    height: 20px;
-    display:table-row;
-    align-content: center;
+    display: flex;
+    justify-content: center;
     align-items: center;
-}
-.gamerow{
-    display: grid;
-    grid-template-columns: repeat(5, 1 fr);
-    grid-gap: 5px
-}
-   
-
-
-/*eighty-eight, twenty-four, sixty-nine*/
-/*0,0,0*/
-/*199, 0, 57*/
+    color: #ffffff;
+    margin: 2px;
+  }
+  
+  .tile-container div {
+    display: flex;
+  }
+  
+  .message-container {
+    height: 30px;
+  }
+  
+  p {
+    background-color: 818384;
+    border-radius: 10px;
+    padding: 10px;
+    margin: 0;
+  }
+  
+  .orange-overlay {
+    background-color: #cc6310 !important;
+    border: none !important;
+  }
+  
+  .yellow-overlay {
+    background-color: #f5e97e !important;
+    border: none !important;
+  }
+  
+  .crystal-overlay {
+    background-color: #a2d7d5 !important;
+    border: none !important;
+  }
+  
+  .tile.flip {
+    animation: 0.5s linear flipping;
+  }
+  
+  @keyframes flipping {
+    0% {
+      transform: rotateX(0deg);
+    }
+    50% {
+      transform: rotateX(90deg);
+    }
+    100% {
+      transform: rotateX(0deg);
+    }
+  }
