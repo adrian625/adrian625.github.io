@@ -16,18 +16,6 @@
     position: relative;
     
 }
-<<<<<<< HEAD
-
-
-
-
-.board-container{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-grow: 1;
-    overflow: hidden;
-=======
 .head{
     text-align: center;
     text-decoration-color: #00FF6C;
@@ -41,7 +29,6 @@
 #board-container{
     min-height: 200px;
     text-align: center;
->>>>>>> 75d074a2ed47e1e1282c0ef700484dc79c72b90a
 }
 
 
@@ -49,18 +36,12 @@
 
 
 body {
-<<<<<<< HEAD
-    
-    background-color: #00AAFF;
-
-=======
     margin: auto;
     background: linear-gradient(to right, #00AAFF, #00FF6C);
->>>>>>> 75d074a2ed47e1e1282c0ef700484dc79c72b90a
     
 }
    
-.title-container{
+.tile-container{
     text-align: center;
     width: 510px;
     border-bottom: solid 1px #3a3a3c;
