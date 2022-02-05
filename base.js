@@ -6,8 +6,7 @@ const wrongPos = [];
 const correctLetter = [];
 let attempt = 0;
 async function main(){
-    let wordToGuess = await readFromTxTFile();
-    document.getElementById("demo").innerHTML = wordToGuess;
+    let squirdle = await readFromTxTFile();
 }
 //Function that reads what word to guess
 async function readFromTxTFile(){
