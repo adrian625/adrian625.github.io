@@ -1,104 +1,24 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <link rel="stylesheet" href="base.css">
-        <script src="base.js"></script>
-        
-
-        
-    </head>
-
-    <body onload="main()">
-
-       <div id="game">
-           <header>
-               <div class="title" style="font-size: x-large; text-align: center; font-weight: 900; font-family: sans-serif; 
-               ;";>Squirdle</div>
-           </header>
-           <div id="board-container">
-           <div id="board" style="width: 350px; height: 420px;">
-              <game-row letters length="5"></game-row>
-             <game-row letters length="5"></game-row>
-              <game-row letters length="5">
-               <style></style>
-               <div class="row"></div>
-               <game-tile>
-                   <style></style>
-                   <div class="tile" data-slate="empty" data-animation="idle"></div>
-               </game-tile>
-               <game-tile>
-                   <style></style>
-                   <div class="tile" data-slate="empty" data-animation="idle"></div>
-               </game-tile>
-               <game-tile>
-                   <style></style>
-                   <div class="tile" data-slate="empty" data-animation="idle"></div>
-               </game-tile>
-               <game-tile>
-                   <style></style>
-                   <div class="tile" data-slate="empty" data-animation="idle"></div>
-               </game-tile>
-               <game-tile>
-                   <Style></Style>
-                   <div class="tile" data-slate="empty" data-animation="idle"></div>
-               </game-tile>
-           </game-row></div>
-        
-        
-        
-        
-        
-        
-                  
-       
-         
-        <div class="alphabet-grid">
-            <p>
-                <button id="Q" value="Q" onclick="setboxVal(this.value)">Q</button>
-                <button id="W" value="W" onclick="setboxVal(this.value)">W</button>
-                <button id="E" value="E" onclick="setboxVal(this.value)">E</button>
-                <button id="R" value="R" onclick="setboxVal(this.value)">R</button>
-                <button id="T" value="T" onclick="setboxVal(this.value)">T</button>
-                <button id="Y" value="Y" onclick="setboxVal(this.value)">Y</button>
-                <button id="U" value="U" onclick="setboxVal(this.value)">U</button>
-                <button id="I" value="I" onclick="setboxVal(this.value)">I</button>
-                <button id="O" value="O" onclick="setboxVal(this.value)">O</button>
-                <button id="P" value="P" onclick="setboxVal(this.value)">P</button>
-            </p>
-
-            <p>
-                <button id="A" value="A" onclick="setboxVal(this.value)">A</button>
-                <button id="S" value="S" onclick="setboxVal(this.value)">S</button>
-                <button id="D" value="D" onclick="setboxVal(this.value)">D</button>
-                <button id="F" value="F" onclick="setboxVal(this.value)">F</button>
-                <button id="G" value="G" onclick="setboxVal(this.value)">G</button>
-                <button id="H" value="H" onclick="setboxVal(this.value)">H</button>
-                <button id="J" value="J" onclick="setboxVal(this.value)">J</button>
-                <button id="K" value="K" onclick="setboxVal(this.value)">K</button>
-                <button id="L" value="L" onclick="setboxVal(this.value)">L</button>
-            </p>
-
-            <p>
-                <button onclick="enterKeyPress()">enter</button>
-                <button id="Z" value="Z" onclick="setboxVal(this.value)">Z</button>
-                <button id="X" value="X" onclick="setboxVal(this.value)">X</button>
-                <button id="C" value="C" onclick="setboxVal(this.value)">C</button>
-                <button id="V" value="V" onclick="setboxVal(this.value)">V</button>
-                <button id="B" value="B" onclick="setboxVal(this.value)">B</button>
-                <button id="N" value="N" onclick="setboxVal(this.value)">N</button>
-                <button id="M" value="M" onclick="setboxVal(this.value)">M</button>
-                <button onclick="delCharWord()">⌫</button>
-            </p>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Squirdle</title>
+    <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+    <div class="game-container">
+        <div class="title-container">
+            <h1>Squirdle</h1>
         </div>
 
+        <div class="message-container"></div>
 
+        <div class="tile-container"></div>
 
-
-        
-        <button>Testing</button>
-
-        <p id="demo"></p>
-        <p id="testOut"></p>
-        
-    </body>
+        <div class="key-container"></div>
+    </div>
+    <script src="base.js"></script>
+</body>
 </html>
