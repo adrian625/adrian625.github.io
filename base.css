@@ -34,15 +34,13 @@
     position: relative;
     margin: auto;
 }
-
-
-
+#board{
+    min-height: 200px;
+    display: inline-block;
+}
 #board-container{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-grow: 1;
-    overflow: hidden;
+    min-height: 200px;
+    text-align: center;
 }
 
 .tile {
