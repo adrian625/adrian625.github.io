@@ -5,8 +5,11 @@ const wrongLetter = [];
 const wrongPos = [];
 const correctLetter = [];
 let attempt = 0;
+let squirdle = 'SUPER';
+
 async function main(){
-    let squirdle = await readFromTxTFile();
+    let temp = await readFromTxTFile();
+    squirdle = temp;
 }
 //Function that reads what word to guess
 async function readFromTxTFile(){
@@ -113,7 +116,7 @@ function updateWrongLetters(){
 const tileDisplay = document.querySelector('.tile-container');
 const keyboard = document.querySelector('.key-container');
 const messageDisplay = document.querySelector('.message-container')
-const squirdle = 'SUPER'
+
 const keys = [
     'Q',
     'W',
