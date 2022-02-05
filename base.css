@@ -1,23 +1,11 @@
-.header{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: var(--header-height);
-    text-align: center;
-    position: relative;
-    font-style: normal;
-    font-size: large;
-    font-weight: 400;
-
+*{
+    color: #ffffff;
 }
 .alphabet-grid button {
     background-color: aqua;
-    min-height: auto;
-    position: relative;
-    text-align: center;
-    justify-content: center;
-    justify-items: center;
-    justify-self: center;
+    width: 510px;
+    display: flex;
+    flex-wrap: wrap;
 }
 
 .alphabet-grid{
@@ -28,12 +16,8 @@
     position: relative;
     
 }
-.head{
-    text-align: center;
-    text-decoration-color: #00FF6C;
-    position: relative;
-    margin: auto;
-}
+<<<<<<< HEAD
+
 
 
 
@@ -43,56 +27,57 @@
     align-items: center;
     flex-grow: 1;
     overflow: hidden;
+=======
+.head{
+    text-align: center;
+    text-decoration-color: #00FF6C;
+    position: relative;
+    margin: auto;
+}
+#board{
+    min-height: 200px;
+    display: inline-block;
+}
+#board-container{
+    min-height: 200px;
+    text-align: center;
+>>>>>>> 75d074a2ed47e1e1282c0ef700484dc79c72b90a
 }
 
-.tile {
-    width: 20px;
-    height: 20px;
-    display:inline-block;
-    margin-top: 10px;
-    margin-left: 10px;
-    font-size: 2rem;
-    line-height: 2rem;
-    font-weight: bold;
-    vertical-align: middle;
-    box-sizing: border-box;
-    background-color: black;
-    text-transform: uppercase;
-    user-select: none;
-}
+
 
 
 
 body {
+<<<<<<< HEAD
     
-    padding: 0;
-    margin: 0%;
-    background: linear-gradient(to right, #00AAFF, #00FF6C);
-    
-}
-.guessArea{
-    position: relative;
-    width: 350px;
-    height: 420px;
-    background-color:#00AAFF;
-    border: 0.5em,  #202121;
-    border-spacing:5px;
+    background-color: #00AAFF;
+
+=======
     margin: auto;
-}
-.guess{
-    width: 20px;
-    height: 20px;
-    display:table-row;
-    align-content: center;
-    align-items: center;
-}
-.gamerow{
-    display: grid;
-    grid-template-columns: repeat(5, 1 fr);
-    grid-gap: 5px
+    background: linear-gradient(to right, #00AAFF, #00FF6C);
+>>>>>>> 75d074a2ed47e1e1282c0ef700484dc79c72b90a
+    
 }
    
+.title-container{
+    text-align: center;
+    width: 510px;
+    border-bottom: solid 1px #3a3a3c;
+}
 
+.game-container {
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.tile-container {
+    width: 330px;
+    margin-bottom: 30px;
+}
 
 /*eighty-eight, twenty-four, sixty-nine*/
 /*0,0,0*/

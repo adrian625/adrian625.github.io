@@ -108,3 +108,4 @@ function updateWrongLetters(){
         document.getElementById(element).style.backgroundColor = "gray"
     });
 }
+
