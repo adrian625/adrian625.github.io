@@ -298,7 +298,7 @@ const addColorToKey = (keyLetter, color) => {
     key.classList.add(color)
 }
 
-document.addEventListener('keypress', handleKeys);
+document.addEventListener('keydown', handleKeys);
 
 function handleKeys(e){
     alert(e.key);
