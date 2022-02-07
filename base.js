@@ -5,7 +5,7 @@ const wrongLetter = [];
 const wrongPos = [];
 const correctLetter = [];
 let attempt = 0;
-let squirdle = 'SUPER';
+
 
 async function main(){
     let temp = await readFromTxTFile();
@@ -296,4 +296,20 @@ const flipTile = () => {
 const addColorToKey = (keyLetter, color) => {
     const key = document.getElementById(keyLetter)
     key.classList.add(color)
+}
+
+document.addEventListener('keypress', handleKeys);
+
+function handleKeys(e){
+if ((e.code == "Backspace") || (e.code == "Delete")) {
+deleteLetter();
+return;
+}
+if (e.code == "Enter") {
+checkRow();
+return;
+}
+if ((/[a-zA-Z]/).test(e.code)) {
+handleClick(e.key.toUpperCase());
+ }
 }
