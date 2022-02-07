@@ -301,7 +301,6 @@ const addColorToKey = (keyLetter, color) => {
 document.addEventListener('keydown', handleKeys);
 
 function handleKeys(e){
-    alert(e.key);
     if ((e.key === "Backspace") || (e.key === "Delete")) {
         
         deleteLetter();
