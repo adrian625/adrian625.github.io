@@ -301,15 +301,15 @@ const addColorToKey = (keyLetter, color) => {
 document.addEventListener('keypress', handleKeys);
 
 function handleKeys(e){
-if ((e.key == "Backspace") || (e.key == "Delete")) {
-deleteLetter();
-return;
-}
-if (e.code == "Enter") {
-checkRow();
-return;
-}
-if ((/[a-zA-Z]/).test(e.code)) {
-handleClick(e.key.toUpperCase());
- }
+    if ((e.key == "Backspace") || (e.key == "Delete")) {
+        deleteLetter();
+        return;
+    }
+    if (e.key == "Enter") {
+        checkRow();
+        return;
+    }
+    if ((/[a-zA-Z]/).test(e.key)) {
+        handleClick(e.key.toUpperCase());
+    }
 }
