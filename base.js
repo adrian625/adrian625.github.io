@@ -301,7 +301,7 @@ const addColorToKey = (keyLetter, color) => {
 document.addEventListener('keypress', handleKeys);
 
 function handleKeys(e){
-if ((e.code == "Backspace") || (e.code == "Delete")) {
+if ((e.key == "Backspace") || (e.key == "Delete")) {
 deleteLetter();
 return;
 }
