@@ -1,5 +1,6 @@
 Abuse
 Adult
+Adieu
 Agent
 Anger
 Apple
@@ -7,6 +8,7 @@ Award
 Basis
 Beach
 Birth
+Bitch
 Block
 Blood
 Board
@@ -110,7 +112,9 @@ Owner
 Panel
 Paper
 Party
+Pause
 Peace
+Penis
 Peter
 Phase
 Phone
@@ -129,6 +133,7 @@ Price
 Pride
 Prize
 Proof
+Proxy
 Queen
 Radio
 Range
@@ -150,6 +155,7 @@ Sheep
 Sheet
 Shift
 Shirt
+Shits
 Shock
 Sight
 Simon
@@ -221,8 +227,6 @@ Thine
 Where
 Which
 Whose
-Whoso
-Yours
 Yours
 Admit
 Adopt
